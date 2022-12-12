@@ -43,8 +43,8 @@ console.log(` ${student.sname} is a student
 in faculty of ${student.faculty} in university ${student.university} And his final grad is ${student.grad} `);
 
 //4 a
-let arr1= ["Egypt", "Spain", "France","Egypt"];
-let arr2= ["South Africa", "Turkey", "France","Koria"];
+let arr1= ["Egypt", "Spain", "Turkey","Egypt"];
+let arr2= ["South Africa", "Turkey", "France","spain"];
 let myset1= new Set( arr1);
 let myset2 =new Set ( arr2);
 let myset3= new Set();
@@ -63,6 +63,17 @@ let sizeofArr= myset1.size;
 repeatedvalue= lenghtofArr - sizeofArr;
 console.log(`  Repeated values ${repeatedvalue}`);
 //d 
+function difference (myset1,myset2){
+    const diff= new Set (myset1);
+    for(const elem of myset2){
+        diff.delete(elem);
+    }
+    return diff;
+}
+
+ console.log(difference(myset1,myset2));
+ console.log(difference(myset2,myset1));
+
 //e 
 var A = [...myset1, ...myset2];
 console.log(A);
