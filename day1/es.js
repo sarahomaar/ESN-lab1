@@ -63,6 +63,10 @@ let sizeofArr= myset1.size;
 repeatedvalue= lenghtofArr - sizeofArr;
 console.log(`  Repeated values ${repeatedvalue}`);
 //d 
+//e 
+var A = [...myset1, ...myset2];
+console.log(A);
+
 
 
 //5
